@@ -1,0 +1,12 @@
+server:
+  port: 1002
+spring:
+  redis:
+    ip1: 192.168.0.114
+    ip2: 192.168.0.114
+    cache:
+      clusterNodes: ${spring.redis.ip1}:7001, ${spring.redis.ip1}:7002, ${spring.redis.ip1}:7003, ${spring.redis.ip1}:7004, ${spring.redis.ip1}:7005, ${spring.redis.ip1}:7006
+      password: jiuxxxxxxx
+      commandTimeout: 5000
+
+
